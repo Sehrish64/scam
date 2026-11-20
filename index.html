@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ur-Latn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GTA 6 Scam Checker – Sehrish Creates</title>
+<meta name="description" content="GTA 6 APK, beta ya free download link scam hai ya nahi? Yahan check karo.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee&family=Rubik:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--night:#12062b;--red:#ff3b4e;--amber:#ffb02e;--cyan:#29e6ff;--cream:#fff3e0}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:radial-gradient(110% 60% at 50% 0,#4a0f2e 0,var(--night) 62%);color:var(--cream);font:400 16px/1.55 Rubik,system-ui,sans-serif;min-height:100vh}
+main{max-width:520px;margin:0 auto;padding:26px 18px 44px}
+h1{font:400 clamp(28px,8.5vw,42px)/1.05 Bungee,Impact,sans-serif;margin:0 0 10px;text-shadow:0 0 18px var(--red)}
+.lead{margin:0 0 20px;opacity:.92}
+.truth{border-left:5px solid var(--cyan);padding:2px 0 2px 14px;margin:0 0 26px}
+.truth b{color:var(--cyan)}
+label.t{display:block;font-weight:600;margin:0 0 6px}
+textarea{width:100%;min-height:110px;font:inherit;color:var(--cream);background:#1d0a40;border:2px solid #4b2480;border-radius:10px;padding:12px 14px;resize:vertical}
+textarea::placeholder{color:#9b84c4}
+textarea:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(--cyan);outline-offset:2px}
+fieldset{border:0;padding:0;margin:14px 0 18px}
+legend{font-weight:600;margin-bottom:6px;padding:0}
+.ck{display:flex;gap:10px;align-items:flex-start;margin:7px 0;cursor:pointer}
+.ck input{width:20px;height:20px;margin-top:3px;accent-color:var(--red);flex:none}
+.go{width:100%;font:400 20px Bungee,Impact,sans-serif;color:#1a0633;background:linear-gradient(90deg,var(--amber),var(--red));border:0;border-radius:12px;padding:15px;cursor:pointer;box-shadow:0 0 22px rgba(255,59,78,.5)}
+#res{margin-top:26px}
+.v{font:400 clamp(26px,8vw,36px)/1.1 Bungee,Impact,sans-serif;margin:0 0 6px}
+.v.bad{color:var(--red);text-shadow:0 0 16px var(--red)}
+.v.mid{color:var(--amber);text-shadow:0 0 16px var(--amber)}
+.v.low{color:var(--cyan);text-shadow:0 0 16px var(--cyan)}
+#res ul{padding-left:20px;margin:10px 0}
+#res li{margin:5px 0}
+.now{background:#24093f;border-radius:10px;padding:14px 16px;margin-top:16px}
+.now h2{font:600 17px Rubik,sans-serif;margin:0 0 6px}
+.row{display:flex;gap:10px;margin-top:16px}
+.row button{flex:1;font:600 16px Rubik,sans-serif;padding:13px;border-radius:10px;cursor:pointer;border:2px solid var(--cyan);background:var(--cyan);color:#06222a}
+small{display:block;margin-top:26px;opacity:.6;font-size:12px}
+.hide{display:none}
+</style>
+</head>
+<body>
+<main>
+<h1>GTA 6 Scam Checker</h1>
+<p class="lead">Koi link, APK ya "beta key" mili hai? Install karne se pehle yahan check karo.</p>
+
+<p class="truth"><b>Sach yeh hai:</b> GTA 6 abhi sirf PS5 aur Xbox Series X|S par aaya hai. Android, iPhone, APK ya "free beta" ka koi official version announce nahi hua. Aise saare offers shak ke daayre mein hain.</p>
+
+<label class="t" for="t">Link, file ka naam ya message yahan paste karo</label>
+<textarea id="t" placeholder="e.g. gta6-mobile-free.apk ya https://gta6-beta-download.com ya WhatsApp ka message"></textarea>
+
+<fieldset>
+<legend>Kya yeh sab bhi hua?</legend>
+<label class="ck"><input type="checkbox" id="c1"> "Unknown sources se install allow karo" kaha gaya</label>
+<label class="ck"><input type="checkbox" id="c2"> Email, OTP, password, card ya wallet maanga gaya</label>
+<label class="ck"><input type="checkbox" id="c3"> "Human verification" ya survey ke baad download ka wada</label>
+</fieldset>
+
+<button class="go" id="go">Check karo</button>
+
+<section id="res" class="hide" aria-live="polite"></section>
+
+<small>Yeh sirf ek andaza lagane wala simple tool hai, antivirus nahi. "Koi red flag nahi mila" ka matlab "100% safe" nahi hota. Shak ho to install mat karo. Fan-made, kisi game company se koi taluq nahi.</small>
+</main>
+
+<script>
+(function(){
+var SITE="sehrishcreatespk.com";
+var OFFICIAL=["rockstargames.com","playstation.com","xbox.com","microsoft.com"];
+function has(re,s){return re.test(s)}
+function check(raw,c1,c2,c3){
+  var s=raw.toLowerCase(),score=0,flags=[],done={};
+  function add(key,pts,msg){if(done[key])return;done[key]=1;score+=pts;flags.push(msg)}
+  var gta=has(/gta\s*-?\s*(6|vi)\b|grand theft auto/,s);
+  if(has(/\.apk\b|\.obb\b|\bapk\b|mod\s*apk/,s)||(gta&&has(/android|iphone|\bios\b|mobile/,s)))
+    add('mob',50,"GTA 6 ka koi official Android, iPhone ya APK version announce nahi hua. Yeh sab se bara shak hai.");
+  if(has(/\.exe\b|\.iso\b|\.rar\b|\.zip\b|repack|crack|setup/,s))
+    add('exe',40,"Game ke naam par EXE, ISO, zip ya crack: aise files mein aksar malware hota hai. Abhi PC version bhi nahi aaya.");
+  if(has(/beta|early access|demo|leak|before release|pre[- ]?download key|free key|redeem|giveaway|gift card/,s))
+    add('beta',30,"Official beta, demo ya early access announce nahi hua. 'Free key' ya giveaway aksar jaal hota hai.");
+  if(has(/\bfree\b|unlimited|hack|generator|no survey|100% working|working 2026/,s))
+    add('free',15,"'Free', 'hack' ya '100% working' jaise lafz scam ki purani pehchan hain.");
+  if(has(/human verification|verify|survey|otp|password|card|wallet|crypto|airdrop|login/,s))
+    add('data',30,"Verification, OTP, password, card ya crypto wallet ka zikr: yeh paise ya account churane ke tareeqe hain.");
+  if(has(/unknown source|allow install|install from/,s))
+    add('unk',25,"'Unknown sources' on karwana aap ke phone ka tala khol deta hai.");
+  var urls=s.match(/(?:https?:\/\/)?(?:[a-z0-9-]+\.)+[a-z]{2,}(?:\/[^\s]*)?/g)||[];
+  urls.forEach(function(u){
+    var h=u.replace(/^https?:\/\//,'').split('/')[0],ok=OFFICIAL.some(function(o){return h===o||h.slice(-o.length-1)==='.'+o});
+    if(/\.(apk|exe|zip|rar|iso|obb)$/.test(h))return;
+    if(!ok)add('dom',25,"Link ("+h+") official Rockstar, PlayStation ya Xbox website nahi hai.");
+    if(!ok&&/gta|rockstar|vice/.test(h))add('look',20,"Naam GTA/Rockstar jaisa hai magar website nakli lag rahi hai.");
+    if(/^(bit\.ly|tinyurl\.com|t\.me|wa\.me|cutt\.ly|discord\.gg)$/.test(h))add('short',20,"Chhota ya chat link aksar asli jagah chhupane ke liye hota hai.");
+  });
+  if(c1)add('unk',25,"'Unknown sources' on karwana aap ke phone ka tala khol deta hai.");
+  if(c2)add('data',30,"Verification, OTP, password, card ya crypto wallet ka zikr: yeh paise ya account churane ke tareeqe hain.");
+  if(c3)add('free',15,"Survey ya human verification ke baad download ka wada scam ki purani pehchan hai.");
+  return {score:score,flags:flags,empty:!raw.trim()&&!c1&&!c2&&!c3};
+}
+function esc(t){return t.replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+
+var res=document.getElementById('res'),verdictText='';
+function run(){
+  var r=check(document.getElementById('t').value,c1.checked,c2.checked,c3.checked),h='';
+  if(r.empty){document.getElementById('t').focus();return}
+  if(r.score>=60){verdictText="SCAM lag raha hai";h+='<p class="v bad">Scam lag raha hai 🚨</p><p>Install mat karo, link kisi ko mat bhejo, aur kuch bhi dalo mat.</p>'}
+  else if(r.score>=25){verdictText="shak wala hai";h+='<p class="v mid">Shak wala hai ⚠️</p><p>Kai warning signs mile hain. Jab tak official jagah se confirm na ho, ise ignore karo.</p>'}
+  else{verdictText="koi red flag nahi mila";h+='<p class="v low">Koi red flag nahi mila</p><p>Lekin yeh guarantee nahi hai. Game sirf PlayStation Store ya Xbox Store se lo, aur kisi ajnabi link se kabhi nahi.</p>'}
+  if(r.flags.length){h+='<ul>'+r.flags.map(function(f){return '<li>'+esc(f)+'</li>'}).join('')+'</ul>'}
+  if(r.score>=25){
+    h+='<div class="now"><h2>Agar install ya form bhar chuke ho:</h2><ul>'+
+    '<li>Phone/PC ko internet se hata do aur app uninstall karo.</li>'+
+    '<li>Kisi doosre safe device se email, Social Club, bank aur UPI/JazzCash/Easypaisa ke passwords badlo.</li>'+
+    '<li>Card ya bank detail di ho to bank ko foran call karke block karwao.</li>'+
+    '<li>Phone mein antivirus scan chalao ya factory reset karo.</li></ul></div>';
+  }
+  h+='<div class="row"><button id="sh">Doston ko warn karo</button></div>';
+  res.innerHTML=h;res.classList.remove('hide');
+  document.getElementById('sh').onclick=share;
+  res.scrollIntoView({behavior:'smooth',block:'start'});
+}
+function share(){
+  var text="GTA 6 ka koi APK ya free beta asli nahi hota, sirf PS5/Xbox par hai. Install karne se pehle yahan check karo: https://"+SITE;
+  if(navigator.share)navigator.share({title:'GTA 6 Scam Alert',text:text}).catch(function(){});
+  else if(navigator.clipboard)navigator.clipboard.writeText(text).then(function(){var b=document.getElementById('sh');b.textContent='Copy ho gaya'});
+}
+var c1=document.getElementById('c1'),c2=document.getElementById('c2'),c3=document.getElementById('c3');
+document.getElementById('go').onclick=run;
+})();
+</script>
+</body>
+</html>
